@@ -43,10 +43,18 @@ public class SecurityConfig {
     http
         .csrf(csrf -> csrf.disable())
         .authorizeHttpRequests(auth -> auth
-            // Public docs/health
+            // Public endpoints
             .requestMatchers("/v3/api-docs/**", "/swagger-ui/**",
                 "/actuator/health", "/actuator/info")
             .permitAll()
+
+            // Tour rating endpoints with specific permissions
+            .requestMatchers(HttpMethod.GET, "/tours/*/ratings/**").permitAll() // Allow feature flag to handle GET
+                                                                                // access
+            .requestMatchers(HttpMethod.POST, "/tours/*/ratings/**").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.PUT, "/tours/*/ratings/**").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.PATCH, "/tours/*/ratings/**").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.DELETE, "/tours/*/ratings/**").hasRole("ADMIN")
 
             // Reads for any authenticated user
             .requestMatchers(HttpMethod.GET, "/tours/**", "/packages/**")
