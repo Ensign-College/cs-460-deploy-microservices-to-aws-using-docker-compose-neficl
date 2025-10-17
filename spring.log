@@ -1,0 +1,93 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:explorecali-jpa >---------------------
+[INFO] Building explorecali-jpa 3.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ explorecali-jpa >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ explorecali-jpa ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ explorecali-jpa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ explorecali-jpa ---
+[INFO] skip non existing resourceDirectory /workspaces/cs-460-deploy-microservices-to-aws-using-docker-compose-neficl/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ explorecali-jpa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ explorecali-jpa <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ explorecali-jpa ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2025-10-17T16:57:06.623Z  INFO 24734 --- [explorecali-jpa] [           main] c.e.e.ExplorecaliJpaApplication          : Starting ExplorecaliJpaApplication using Java 21.0.8 with PID 24734 (/workspaces/cs-460-deploy-microservices-to-aws-using-docker-compose-neficl/target/classes started by vscode in /workspaces/cs-460-deploy-microservices-to-aws-using-docker-compose-neficl)
+2025-10-17T16:57:06.625Z DEBUG 24734 --- [explorecali-jpa] [           main] c.e.e.ExplorecaliJpaApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-10-17T16:57:06.626Z  INFO 24734 --- [explorecali-jpa] [           main] c.e.e.ExplorecaliJpaApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-17T16:57:07.811Z  INFO 24734 --- [explorecali-jpa] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-17T16:57:07.851Z  INFO 24734 --- [explorecali-jpa] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2025-10-17T16:57:08.649Z  INFO 24734 --- [explorecali-jpa] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-17T16:57:08.676Z  INFO 24734 --- [explorecali-jpa] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-17T16:57:08.677Z  INFO 24734 --- [explorecali-jpa] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-10-17T16:57:08.738Z  INFO 24734 --- [explorecali-jpa] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-17T16:57:08.739Z  INFO 24734 --- [explorecali-jpa] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1988 ms
+2025-10-17T16:57:09.036Z  INFO 24734 --- [explorecali-jpa] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-17T16:57:09.184Z  INFO 24734 --- [explorecali-jpa] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e90080fb-f6e4-4ed4-b45c-00314a30199f user=SA
+2025-10-17T16:57:09.186Z  INFO 24734 --- [explorecali-jpa] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-17T16:57:09.262Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2025-10-17T16:57:09.262Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2025-10-17T16:57:09.263Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.c.internal.license.VersionPrinter    : 
+2025-10-17T16:57:09.296Z  INFO 24734 --- [explorecali-jpa] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:e90080fb-f6e4-4ed4-b45c-00314a30199f (H2 2.2)
+2025-10-17T16:57:09.303Z  WARN 24734 --- [explorecali-jpa] [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2025-10-17T16:57:09.325Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2025-10-17T16:57:09.328Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.016s)
+2025-10-17T16:57:09.334Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2025-10-17T16:57:09.361Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2025-10-17T16:57:09.367Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - CreateTourSchema"
+2025-10-17T16:57:09.409Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.2 - AddTours"
+2025-10-17T16:57:09.426Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.3 - CreateTourRatingSchema"
+2025-10-17T16:57:09.432Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.4 - AddTourRatings"
+2025-10-17T16:57:09.444Z  INFO 24734 --- [explorecali-jpa] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 4 migrations to schema "PUBLIC", now at version v1.4 (execution time 00:00.030s)
+2025-10-17T16:57:09.517Z  INFO 24734 --- [explorecali-jpa] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-17T16:57:09.552Z  INFO 24734 --- [explorecali-jpa] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-10-17T16:57:09.575Z  INFO 24734 --- [explorecali-jpa] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-17T16:57:09.720Z  INFO 24734 --- [explorecali-jpa] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-17T16:57:10.449Z  INFO 24734 --- [explorecali-jpa] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-17T16:57:10.453Z  INFO 24734 --- [explorecali-jpa] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-17T16:57:10.833Z  INFO 24734 --- [explorecali-jpa] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-17T16:57:11.776Z  WARN 24734 --- [explorecali-jpa] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-17T16:57:12.443Z  INFO 24734 --- [explorecali-jpa] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-10-17T16:57:12.511Z  INFO 24734 --- [explorecali-jpa] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@564519de, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75b45343, org.springframework.security.web.context.SecurityContextHolderFilter@5c5432d9, org.springframework.security.web.header.HeaderWriterFilter@3f321f8, org.springframework.web.filter.CorsFilter@553fdf58, org.springframework.security.web.authentication.logout.LogoutFilter@915ac5c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1a7c593b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37a1ac0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24d25c43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a9d88ca, org.springframework.security.web.access.ExceptionTranslationFilter@31f575aa, org.springframework.security.web.access.intercept.AuthorizationFilter@4eb1407f]
+2025-10-17T16:57:13.308Z  INFO 24734 --- [explorecali-jpa] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-10-17T16:57:13.325Z  INFO 24734 --- [explorecali-jpa] [           main] c.e.e.ExplorecaliJpaApplication          : Started ExplorecaliJpaApplication in 7.036 seconds (process running for 7.566)
+2025-10-17T16:57:13.409Z  INFO 24734 --- [explorecali-jpa] [           main] c.e.e.business.TourPackageService        : Get total tour package
+Persisted Packages = 9
+2025-10-17T16:57:13.473Z  INFO 24734 --- [explorecali-jpa] [           main] c.e.explorecalijpa.business.TourService  : Get total tours
+Persisted Tours = 30
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:09 min
+[INFO] Finished at: 2025-10-17T17:00:12Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.5:run (default-cli) on project explorecali-jpa: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
